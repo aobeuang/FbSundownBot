@@ -34,7 +34,7 @@ class Welcome extends CI_Controller {
 		$input = json_decode(file_get_contents('php://input'), true);
 		$sender = $input['entry'][0]['messaging'][0]['sender']['id'];
 		$message = $input['entry'][0]['messaging'][0]['message']['text'];
-		$message_to_reply = '';
+		$message_to_reply = 'ssss';
 
 		//API Url
 		$url = 'https://graph.facebook.com/v2.6/me/messages?access_token='.$access_token;
